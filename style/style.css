@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Quicksand:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +34,40 @@ header {
     transition: all 0.5s;
 }
 
+/************************** pc버전 header의 메뉴 부분 (id: gnb) **************************/
+#gnb {
+    position: relative;
+    top: 10%;
+    left: 0;
+}
+
+#gnb li a, #gnb li a:hover {
+    height: 50px;
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Quicksand", sans-serif;
+    color: orange;
+}
+
+#gnb li a:hover {
+    color: brown;
+    background-color: rgb(247, 233, 216);
+}
+
+.snsSet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+}
+
+.snsSet a {
+    display: inline-block;
+}
+
 nav {
     width: 85%;
     height: 35px;
@@ -39,6 +75,25 @@ nav {
     margin-left: 15%;
     background-color: cadetblue;
     transition: all 0.5s;
+}
+
+.navSet {
+    width: 200px;
+    float: right;
+}
+
+.navSet a {
+    display: inline-block;
+    height: 35px;
+    padding: 0 3px;
+}
+
+.navSet a img {
+    padding-top: 3px;
+}
+
+.navSet a img:hover {
+    opacity: 0.7;
 }
 
 section {
@@ -85,6 +140,7 @@ article:nth-child(12) {width: 20%; background-color: #222;}
 /* 980~1299px 사이에 적용 */
 @media all and (min-width: 980px) and (max-width: 1299px) {
     header {
+        display: none;
         width: 100%;
         height: 80px;
         position: relative;
@@ -99,6 +155,7 @@ article:nth-child(12) {width: 20%; background-color: #222;}
 /* 724~979px 사이에 적용 */
 @media all and (min-width: 724px) and (max-width: 979px) {
     header {
+        display: none;
         width: 100%;
         height: 80px;
         position: relative;
@@ -126,6 +183,7 @@ article:nth-child(12) {width: 20%; background-color: #222;}
 /* 580~723px 사이에 적용 */
 @media all and (min-width: 580px) and (max-width:723px) {
     header {
+        display: none;
         width: 100%;
         height: 80px;
         position: relative;
@@ -153,6 +211,7 @@ article:nth-child(12) {width: 20%; background-color: #222;}
 /* 480~579px 사이에 적용 */
 @media all and (min-width: 480px) and (max-width: 579px) {
     header {
+        display: none;
         width: 100%;
         height: 80px;
         position: relative;
@@ -180,6 +239,7 @@ article:nth-child(12) {width: 20%; background-color: #222;}
 /* ~479px 까지 적용 */
 @media all and (max-width: 479px) {
     header {
+        display: none;
         width: 100%;
         height: 150px;
         position: relative;
