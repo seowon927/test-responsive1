@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -263,3 +265,80 @@ article:nth-child(12) {width: 20%; background-color: #222;}
     article:nth-child(11) {width: 50%; display: none;}
     article:nth-child(12) {width: 50%; display: none;}
 }
+
+/************************** 배경 이미지 삽입 **************************/
+.bg1 {background-image: url(../images/img3.jpg);}
+.bg2 {background-image: url(../images/img1.jpg);}
+.bg3 {background-image: url(../images/img2.jpg);}
+.bg4 {background-image: url(../images/img4.jpg);}
+.bg5 {background-image: url(../images/img5.jpg);}
+.bg6 {background-image: url(../images/img6.jpg);}
+
+/************************** 이미지 박스 **************************/
+article {
+    background-size: auto 100%;
+    background-position: center;
+}
+
+article .bg1 {
+height: 520px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+article .bg1 span {
+position: absolute;
+top: 10%;
+left: 10%;
+font-size: 100px;
+color: white;
+opacity: 0.5;
+transition: all 0.5s;
+}
+
+article:hover .bg1 span {
+    opacity: 1;
+    color: beige;
+    transform: scale(1);
+}
+
+article .bg1:hover span {
+    transform: rotateY(360deg);
+    transition: all 0.5s;
+}
+
+/************************** 텍스트 박스 **************************/
+article .txt {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 13px;
+}
+
+article .txt p strong {
+    font-size: 20px;
+    font-family: "DM Serif Display", serif;
+}
+
+article .txt p em {
+    font-size: 15px;
+    padding-top: 8px;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+}
+
+article:hover .txt {
+    background-color: beige;
+}
+
+article:hover .txt p strong {
+    color: brown;
+}
+
+article:hover .txt p em {
+    color: orange;
+}
+
+.txt1 {background-color: rgb(194, 221, 212); color: rgb(32, 93, 95);}
+.txt2 { background-color: rgb(166, 186, 179); color: rgb(23, 69, 70);}
+.txt3 { background-color: rgb(135, 151, 145); color: rgb(15, 70, 71);}
